@@ -62,7 +62,7 @@ void removeTask() {
     cout << "Task removed!\n";
 }
 
-int main() {
+int main() { // main function
     loadTasks();
 
     while (true) {
@@ -73,10 +73,10 @@ int main() {
         cout << "4. Save & Exit\n";
         cout << "Choose: ";
 
-        int choice;
-        cin >> choice;
+        int choice; // variable
+        cin >> choice; // 
 
-        switch (choice) {
+        switch (choice) { // switch
             case 1: listTasks(); break;
             case 2: addTask(); break;
             case 3: removeTask(); break;
