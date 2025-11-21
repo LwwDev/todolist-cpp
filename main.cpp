@@ -4,23 +4,26 @@
 #include <fstream>
 using namespace std;
 
-vector<string> tasks;
-const string FILE_NAME = "tasks.txt";
+//includes necessary libs
 
-void loadTasks() {
-    ifstream file(FILE_NAME);
-    if (!file.is_open()) return;
-    string line;
-    while (getline(file, line)) {
-        tasks.push_back(line);
+
+vector<string> tasks; // creats array
+const string FILE_NAME = "tasks.txt"; //sets file name
+
+void loadTasks() { // function
+    ifstream file(FILE_NAME); // ifstream not sure what this does
+    if (!file.is_open()) return; // if file is not open return 
+    string line; // not surewhat this does
+    while (getline(file, line)) { // not sure
+        tasks.push_back(line); // not sure
     }
-    file.close();
+    file.close(); // not sure
 }
 
-void saveTasks() {
+void saveTasks() { // not sure what this function does
     ofstream file(FILE_NAME);
     for (auto &t : tasks) file << t << "\n";
-    file.close();
+    file.close(); // still dont know
 }
 
 void listTasks() {
